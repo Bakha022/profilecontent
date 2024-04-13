@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #ffffff;
+}
+.card {
+	width: 80%;
+	height: 544px;
+	border: 20px solid #e6e6e6;
+	border-radius: 30px;
+	margin: 257px auto;
+	position: static;
+	z-index: 12;
+}
+
+.person-img {
+	width: 250px;
+	padding-top: 42px;
+}
+
+.row {
+	display: flex;
+	justify-content: center;
+	gap: 40px;
+}
+
+.person-about {
+	width: 650px;
+	padding-top: 86px;
+}
+
+.person-about h1 {
+	font-family: Merriweather;
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 40.22px;
+	color: #141843;
+}
+
+.person-position {
+	font-family: Poppins;
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 36px;
+	color: #5f627a;
+	margin-top: 4px;
+}
+
+.person-skills {
+	font-family: Poppins;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 36px;
+	color: #141843;
+	margin-top: 11px;
+}
+
+.row-2 {
+	margin-top: 43px;
+}
+
+.person-followers {
+	display: flex;
+	gap: 45px;
+	align-items: center;
+}
+
+.items h3,
+.items p {
+	font-family: Poppins;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 30px;
+	text-align: center;
+	color: #141843;
+}
+
+.hoziontal-line {
+	height: 50px;
+	width: 1px;
+	background-color: #141843;
+}
+
+.buttons {
+	margin-top: 43px;
+	display: flex;
+	align-items: center;
+	gap: 23px;
+}
+
+.followBtn {
+	font-family: Poppins;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 30px;
+	text-align: center;
+	color: #141843;
+	border: 1px solid #141843;
+	border-radius: 10px;
+	background-color: #aef1f5;
+	padding: 16px 48.5px;
+	cursor: pointer;
+	width: 150px;
+}
+
+.view-profileBtn {
+	font-family: Poppins;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 30px;
+	text-align: center;
+	color: #141843;
+	border: 1px solid #141843;
+	border-radius: 10px;
+	background-color: #ffddb6;
+	padding: 16px;
+	cursor: pointer;
+	width: 150px;
+}
+
+/* .liner-1 {
+	position: absolute;
+	z-index: 1;
+	top: 340px;
+	height: 1000px;
+	width: 1000px;
+	background: radial-gradient(
+		50% 50% at 50% 50%,
+		rgba(237, 187, 255, 0.6) 0%,
+		rgba(237, 187, 255, 0) 100%
+	);
+	left: -300px;
+}
+
+.liner-2 {
+	position: absolute;
+	z-index: 3;
+	width: 528px;
+	height: 528px;
+	background: radial-gradient(
+		50% 50% at 50% 50%,
+		#c6fcff 0%,
+		rgba(198, 252, 255, 0) 100%
+	);
+	top: -80px;
+	left: 700px;
+} */
+
+@media (max-width: 640px) {
+	.card {
+		width: 90%;
+		height: auto;
+		margin-top: 100px;
+	}
+	.row {
+		/* flex-direction: column; */
+		flex-wrap: wrap;
+		justify-content: center;
+		/* gap: 10px; */
+	}
+	.person-img img {
+		width: 180px;
+	}
+
+	.person-img {
+		width: 100%;
+		text-align: center;
+	}
+
+	.person-about {
+		width: 500px;
+		padding: 0 30px;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.person-followers {
+		justify-content: center;
+		gap: 20px;
+		flex-wrap: wrap;
+	}
+
+	.buttons {
+		margin-top: 0;
+		padding: 50px 0;
+		justify-content: center;
+	}
+
+	.person-about h1 {
+		font-size: 27px;
+	}
+	.person-position,
+	.person-skills {
+		font-size: 22px;
+	}
+
+	.items h3,
+	.items p {
+		font-size: 20px;
+	}
+
+	.followBtn,
+	.view-profileBtn {
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 491px) {
+	.buttons {
+		flex-direction: column;
+	}
+
+	.person-followers {
+		flex-direction: column;
+	}
+	.hoziontal-line {
+		transform: rotate(-90deg);
+	}
+
+	.card {
+	border: 8px solid #e6e6e6;
+	}
+}
+
+@media (max-width: 768px) {
+	.card {
+		width: 90%;
+		height: auto;
+		margin-top: 100px;
+		border: 12px solid #e6e6e6;
+
+	}
+	.row {
+		/* flex-direction: column; */
+		flex-wrap: wrap;
+		justify-content: center;
+		/* gap: 10px; */
+	}
+	.person-img img {
+		width: 180px;
+	}
+
+	.person-img {
+		width: 100%;
+		text-align: center;
+	}
+
+	.person-about {
+		width: 500px;
+		padding: 0 30px;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.person-followers {
+		justify-content: center;
+		gap: 20px;
+		flex-wrap: wrap;
+	}
+
+	.buttons {
+		margin-top: 0;
+		padding: 50px 0;
+		justify-content: center;
+	}
+
+	.person-about h1 {
+		font-size: 27px;
+	}
+	.person-position,
+	.person-skills {
+		font-size: 22px;
+	}
+
+	.items h3,
+	.items p {
+		font-size: 20px;
+	}
+
+	.followBtn,
+	.view-profileBtn {
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 1024px) {
+	.card {
+		height: auto;
+	}
+	.row {
+		flex-wrap: wrap;
+	}
+
+	.person-about {
+		margin-top: 0;
+		padding: 0 30px;
+	}
+
+	.buttons {
+		padding-bottom: 30px;
+	}
+}
